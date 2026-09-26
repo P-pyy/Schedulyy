@@ -1,0 +1,6 @@
+{
+  "name": "Scheduly",
+  "description": "Modern appointment booking and service business management platform with client discovery, realtime scheduling, business dashboard, and CRM.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

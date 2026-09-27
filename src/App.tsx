@@ -223,7 +223,7 @@ export function App() {
       />
 
       {/* Main Screen Views Routing */}
-      <main className="flex-1 w-full pt-16 overflow-x-hidden">
+      <main className="flex-1 w-full pt-16 pb-28 overflow-x-hidden">
         <AnimatePresence mode="wait">
           <motion.div
             key={`${appMode}-${appMode === 'client' ? clientTab : appMode === 'business' ? businessTab : adminTab}`}

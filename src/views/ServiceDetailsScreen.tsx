@@ -789,7 +789,7 @@ export const ServiceDetailsScreen: React.FC<ServiceDetailsScreenProps> = ({
       )}
 
       {/* Sticky Bottom Summary Sheet */}
-      <div className="fixed bottom-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-xl shadow-[0_-8px_24px_rgba(20,27,43,0.08)] px-4 py-2.5 pb-[env(safe-area-inset-bottom,10px)] border-t border-[#e9edff]">
+      <div className="fixed bottom-16 lg:bottom-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-xl shadow-[0_-8px_24px_rgba(20,27,43,0.08)] px-4 py-2.5 pb-[env(safe-area-inset-bottom,10px)] border-t border-[#e9edff]">
         <div className="max-w-3xl mx-auto flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2.5">
           {/* Quick Detail Summary */}
           <div className="flex items-center justify-between sm:justify-start gap-3 min-w-0">

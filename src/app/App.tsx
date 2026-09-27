@@ -1,26 +1,26 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { AppMode, ClientTab, BusinessTab, AdminTab, Booking, SalonService, ToastMessage } from './types';
-import { INITIAL_BOOKINGS, INITIAL_SERVICES, ASSETS } from './data/mockData';
-import { useAuth } from './hooks/useAuth';
-import { getBookings, updateBookingStatus, setBookingCheckIn } from './lib/database';
-import { isSupabaseConfigured } from './lib/supabase';
-import { Header } from './components/Header';
-import { BottomNav } from './components/BottomNav';
-import { HomeScreen } from './views/HomeScreen';
-import { ExploreScreen } from './views/ExploreScreen';
-import { ServiceDetailsScreen } from './views/ServiceDetailsScreen';
-import { BookingSlotScreen } from './views/BookingSlotScreen';
-import { ClientBookingsScreen } from './views/ClientBookingsScreen';
-import { BusinessOverviewScreen } from './views/BusinessOverviewScreen';
-import { BusinessCalendarScreen } from './views/BusinessCalendarScreen';
-import { BusinessBookingsScreen } from './views/BusinessBookingsScreen';
-import { BusinessClientsScreen } from './views/BusinessClientsScreen';
-import { ServicesManagementScreen } from './views/ServicesManagementScreen';
-import { BusinessAnalyticsScreen } from './views/BusinessAnalyticsScreen';
-import { AdminConsoleScreen } from './views/AdminConsoleScreen';
-import { FavoritesScreen } from './views/FavoritesScreen';
-import { AuthModal } from './views/AuthModal';
+import { AppMode, ClientTab, BusinessTab, AdminTab, Booking, SalonService, ToastMessage } from '../shared/types';
+import { INITIAL_BOOKINGS, INITIAL_SERVICES, ASSETS } from '../data/mockData';
+import { useAuth } from '../hooks/useAuth';
+import { getBookings, updateBookingStatus, setBookingCheckIn } from '../lib/database';
+import { isSupabaseConfigured } from '../lib/supabase';
+import { Header } from '../components/Header';
+import { BottomNav } from '../components/BottomNav';
+import { HomeScreen } from '../views/HomeScreen';
+import { ExploreScreen } from '../views/ExploreScreen';
+import { ServiceDetailsScreen } from '../views/ServiceDetailsScreen';
+import { BookingSlotScreen } from '../views/BookingSlotScreen';
+import { ClientBookingsScreen } from '../views/ClientBookingsScreen';
+import { BusinessOverviewScreen } from '../views/BusinessOverviewScreen';
+import { BusinessCalendarScreen } from '../views/BusinessCalendarScreen';
+import { BusinessBookingsScreen } from '../views/BusinessBookingsScreen';
+import { BusinessClientsScreen } from '../views/BusinessClientsScreen';
+import { ServicesManagementScreen } from '../views/ServicesManagementScreen';
+import { BusinessAnalyticsScreen } from '../views/BusinessAnalyticsScreen';
+import { AdminConsoleScreen } from '../views/AdminConsoleScreen';
+import { FavoritesScreen } from '../views/FavoritesScreen';
+import { AuthModal } from '../views/AuthModal';
 
 export function App() {
   const { user, profile, role, appMode: authAppMode, signOut } = useAuth();
@@ -71,7 +71,11 @@ export function App() {
   // Trigger tactile floating toast notifications
   const triggerToast = (message: string, icon = 'info') => {
     const id = `${Date.now()}-${Math.random()}`;
-    setToasts(prev => [...prev, { id, message, icon, type: 'info' }]);
+    const notificationText = message.replace(
+      /(?:\s*[\p{Extended_Pictographic}\p{Regional_Indicator}\uFE0F\u200D\u{1F3FB}-\u{1F3FF}]+)+\s*$/u,
+      ''
+    );
+    setToasts(prev => [...prev, { id, message: notificationText, icon, type: 'info' }]);
     setTimeout(() => {
       setToasts(prev => prev.filter(t => t.id !== id));
     }, 3800);

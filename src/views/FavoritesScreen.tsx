@@ -91,7 +91,7 @@ export const FavoritesScreen: React.FC<FavoritesScreenProps> = ({
   });
 
   return (
-    <div className="flex flex-col w-full pb-28 lg:pb-8 max-w-7xl mx-auto px-4 lg:px-8">
+    <div className="flex flex-col w-full pb-24 lg:pb-10 max-w-7xl mx-auto px-4 lg:px-8">
       {/* Top Header Section - Compact on Laptop (1280x720 / 1366x768 friendly) */}
       <section className="pt-3 lg:pt-5 pb-3 border-b border-[#e9edff] flex flex-col md:flex-row md:items-center md:justify-between gap-3">
         <div>

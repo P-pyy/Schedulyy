@@ -21,7 +21,7 @@ export const BusinessAnalyticsScreen: React.FC<BusinessAnalyticsScreenProps> = (
   ];
 
   return (
-    <div className="flex flex-col w-full pb-28 lg:pb-8 max-w-7xl mx-auto lg:px-6">
+    <div className="flex flex-col w-full pb-24 lg:pb-10 max-w-7xl mx-auto lg:px-6">
       {/* Analytics Header & Range Selector */}
       <section className="px-4 lg:px-0 pt-4 pb-2">
         <div className="p-4 rounded-2xl bg-white shadow-xs border border-[#e9edff] flex items-center justify-between">

@@ -223,7 +223,7 @@ export function App() {
       />
 
       {/* Main Screen Views Routing */}
-      <main className="flex-1 w-full pt-16 pb-28 overflow-x-hidden">
+      <main className="w-full pt-16 pb-16 lg:pb-12 overflow-x-hidden">
         <AnimatePresence mode="wait">
           <motion.div
             key={`${appMode}-${appMode === 'client' ? clientTab : appMode === 'business' ? businessTab : adminTab}`}
@@ -231,7 +231,7 @@ export function App() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -8 }}
             transition={{ duration: 0.16, ease: 'easeOut' }}
-            className="w-full flex-1"
+            className="w-full"
           >
             {/* ==================== CLIENT VIEWS ==================== */}
         {appMode === 'client' && (

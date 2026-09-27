@@ -590,7 +590,7 @@ export const AdminConsoleScreen: React.FC<AdminConsoleScreenProps> = ({
   };
 
   return (
-    <div className="flex flex-col w-full pb-28 lg:pb-8 max-w-7xl mx-auto lg:px-6">
+    <div className="flex flex-col w-full pb-24 lg:pb-10 max-w-7xl mx-auto lg:px-6">
       {/* ========================================================================= */}
       {/* TAB 1: OVERVIEW (PLATFORM PULSE) - EXACT MATCH TO PROVIDED SCREENSHOT */}
       {/* ========================================================================= */}

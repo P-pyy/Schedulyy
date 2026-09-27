@@ -156,9 +156,9 @@ export const ExploreScreen: React.FC<ExploreScreenProps> = ({
   };
 
   return (
-    <div className="flex flex-col w-full pb-28 lg:pb-8 max-w-7xl mx-auto px-4 lg:px-8">
+    <div className="flex flex-col w-full -mt-1 pb-24 lg:pb-10 max-w-7xl mx-auto px-4 lg:px-8">
       {/* Search & Filter Header */}
-      <section className="sticky top-16 z-30 py-2.5 bg-[#f9f9ff]/95 backdrop-blur-md">
+      <section className="sticky top-16 z-30 pt-1.5 pb-2 bg-[#f9f9ff]/95 backdrop-blur-md">
         <div className="flex items-center gap-2 w-full">
           <div className="flex-1 flex items-center gap-2 px-3.5 h-11 rounded-xl bg-white shadow-xs border border-[#e9edff] focus-within:border-[#3525cd] transition-colors">
             <span className="material-symbols-outlined text-[#777587] text-[20px] shrink-0">search</span>

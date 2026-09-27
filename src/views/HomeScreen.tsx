@@ -60,7 +60,7 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({
   ];
 
   return (
-    <div className="flex flex-col w-full pb-24 lg:pb-8">
+    <div className="flex flex-col w-full pb-20 lg:pb-10">
       {/* Hero Section */}
       <section className="px-4 lg:px-8 max-w-7xl mx-auto w-full pt-3 lg:pt-6 pb-4 lg:pb-6 flex flex-col lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center relative overflow-hidden">
         <div className="flex flex-col gap-3.5">

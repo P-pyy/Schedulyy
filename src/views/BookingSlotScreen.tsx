@@ -106,7 +106,7 @@ export const BookingSlotScreen: React.FC<BookingSlotScreenProps> = ({
   };
 
   return (
-    <div className="flex flex-col w-full pb-28 lg:pb-16 max-w-5xl mx-auto lg:px-6">
+    <div className="flex flex-col w-full pb-24 lg:pb-12 max-w-5xl mx-auto lg:px-6">
       {/* Stepper Progress Bar */}
       <div className="px-4 pt-3 pb-2 flex items-center justify-between border-b border-[#e9edff] bg-white">
         <div className="flex items-center gap-2">

@@ -27,7 +27,7 @@ export const ServiceDetailsScreen: React.FC<ServiceDetailsScreenProps> = ({
   };
 
   return (
-    <div className="flex flex-col w-full pb-28 lg:pb-16 max-w-6xl mx-auto lg:px-6">
+    <div className="flex flex-col w-full pb-24 lg:pb-12 max-w-6xl mx-auto lg:px-6">
       {/* Interactive Top Action Row */}
       <div className="px-4 pt-3 pb-2 flex items-center justify-between">
         <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#e1e8fd] text-[#141b2b] text-[12px] font-semibold">

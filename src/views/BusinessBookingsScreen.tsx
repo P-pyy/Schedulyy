@@ -69,7 +69,7 @@ export const BusinessBookingsScreen: React.FC<BusinessBookingsScreenProps> = ({
   const completedCount = bookings.filter(b => b.status === 'completed').length;
 
   return (
-    <div className="flex flex-col w-full pb-28 lg:pb-12 max-w-7xl mx-auto px-4 lg:px-8">
+    <div className="flex flex-col w-full pb-24 lg:pb-12 max-w-7xl mx-auto px-4 lg:px-8">
       {/* Search, Filter & Action Control Card (Clean Top Card, Never Overlaps or Crops Content) */}
       <section className="pt-4 pb-2">
         <div className="p-4 sm:p-5 rounded-2xl bg-white shadow-xs border border-[#e9edff] flex flex-col gap-4">

@@ -150,7 +150,7 @@ export const ClientBookingsScreen: React.FC<ClientBookingsScreenProps> = ({
   };
 
   return (
-    <div className="flex flex-col w-full pb-28 lg:pb-8 max-w-7xl mx-auto px-4 lg:px-8">
+    <div className="flex flex-col w-full pb-24 lg:pb-10 max-w-7xl mx-auto px-4 lg:px-8">
       {/* Profile Header Banner */}
       <section className="pt-4 pb-3">
         <div className="p-4 rounded-2xl bg-white shadow-xs border border-[#e9edff] flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
